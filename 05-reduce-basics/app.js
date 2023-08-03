@@ -35,12 +35,12 @@ const staff = [
 ]
 
 const dailyTotal = staff.reduce((total, person) => {
-  console.log(total)
+  // console.log(total)
   // console.log(person.salary)
 
   total += person.salary
 
   return total // always we must return the first value
-}, 0) // 0 is initial value
+}, 0) // 0 is initial value. In this case, I am returning a number.
 
 // console.log(dailyTotal)
