@@ -55,8 +55,18 @@ const url = 'https://api.github.com/users/john-smilga/repos?per_page=100'
 const fetchData = async () => {
   const response = await fetch(url)
   const data = await response.json()
+
+  console.log(data)
   const newData = data.reduce((total, repo) => {
     const { language } = repo
+
+    if (language) {
+      if (total[language]) {
+        total[language] += 1
+      } else {
+        total[language] = 1
+      }
+    }
 
     return total
   }, {})
