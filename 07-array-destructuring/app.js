@@ -17,12 +17,12 @@ let first = 'bob'
 let second = 'john'
 
 // let temp = second
-// console.log(temp, first, second)
+// console.log(temp, first, second) // john bob john
 // second = first
-// console.log(temp, first, second)
+// console.log(temp, first, second) // john bob bob
 // first = temp
-// console.log(temp, first, second)
+// console.log(temp, first, second) // john john bob
 
-;[second, first] = [first, second]
+;[second, first] = [first, second] //assign second's value to first value, first's value to second's value.
 
 console.log(first, second)
