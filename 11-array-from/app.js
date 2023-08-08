@@ -15,6 +15,8 @@ const text = document.querySelectorAll('.text') //array methods doesn't work on 
 const newText = Array.from(text).find((item) => item.textContent === 'person')
 // console.log(newText)
 
+// -------------------------------------------------------------------------------------
+
 // the value of `v` below will be `undefined`
 const items = Array.from({ length: 120 }, (v, index) => {
   return index
