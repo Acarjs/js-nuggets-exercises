@@ -22,5 +22,5 @@ people.forEach((person) => {
   //We say here that : Hey check for the person if it's there then keep checking for location. If location is there keep checking for timezone. If timezone is there check for the offset.
 
   //if we don't wanna see undefined, then :
-  console.log(person?.location?.timezone?.offset || 'hello')
+  console.log(person?.location?.timezone?.offset || 'hello') //+7:00 hello +9:00
 })
